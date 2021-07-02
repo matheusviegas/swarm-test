@@ -1,5 +1,7 @@
 FROM node:12-alpine
 
+RUN apk add curl
+
 ADD ./app/* /
 
 RUN npm install
